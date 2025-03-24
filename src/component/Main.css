@@ -1,0 +1,57 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*image*/
+#about img {
+    height: auto;
+    width: auto;
+    max-width: 45%; /* Ensures it doesn’t overflow the container */
+    display: block;
+    border-radius: 10%;
+}
+
+/*section*/
+.content-section{
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+}
+
+.content-section:nth-child(even){
+    background-color: #E9E9E9;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 10%;
+    text-align: left;
+}
+
+#about img {
+    height: auto;
+    max-width: 300px; /* Slightly reduce max size for balance */
+    border-radius: 10%;
+}
+
+
+.about-text {
+    text-align: left; /* Aligns text to the left */
+    max-width: 600px; /* Prevents text from stretching too wide */
+}
+
+.about-text h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.about-text p {
+    font-size: 18px; /* Slightly smaller for better readability */
+    line-height: 1.7; /* More breathing room */
+    margin-bottom: 15px;
+}
