@@ -1,10 +1,13 @@
 import React from "react";
 import Profile_image from "../assets/photo/yoshi.jpg";
+import Back_img from "../assets/photo/backimg.jpg";
 import "./Main.css";
 
 function Main() {
   return (
     <>
+      <section id="top-page" className="content-section"/>
+
       <section id="about" className="content-section">
         <img src={Profile_image} />
         <div className="about-text">

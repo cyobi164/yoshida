@@ -23,6 +23,7 @@ html{
     background-color: #E9E9E9;
 }
 
+/*about*/
 #about {
     display: flex;
     flex-wrap: wrap; /* Allows stacking on smaller screens */
@@ -55,3 +56,5 @@ html{
     line-height: 1.7; /* More breathing room */
     margin-bottom: 15px;
 }
+
+
