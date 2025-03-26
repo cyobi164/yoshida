@@ -104,20 +104,20 @@ body {
 /* Responsive About Section */
 @media (max-width: 768px) {
     #about {
-        flex-direction: column;
-        text-align: center;
+        text-align: left; /* Align text to left instead of center */
     }
     .about-text {
-        text-align: center;
+        text-align: left;
+        padding: 0 10px; /* Add some padding for better readability */
     }
     .about-text p {
-        font-size: 18px;
-        line-height: 1.9; /* Increased line height */
-        word-break: break-word; /* Prevents awkward breaks */
-        hyphens: auto; /* Adds hyphens where necessary */
+        font-size: 19px;
+        line-height: 1.9;
         margin-bottom: 15px;
+        text-indent: 1em; /* Indent the first line for better readability */
     }
 }
+
 
 /* Content Sections */
 .content-section {
