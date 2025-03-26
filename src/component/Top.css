@@ -1,29 +1,80 @@
-/*top container*/
-.top-container{
+/* Navbar */
+.top-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/*logo*/
-.logo img{
-    height: 70px;
+/* Logo */
+.logo img {
+    height: 50px;
     width: auto;
     display: block;
 }
 
-/*nav bar*/
-.nav{
+/* Navigation */
+.nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
-/*nav item*/
-.nav-item{
-    margin: 0 15px;
-    font-size: 25px;
+/* Navigation Items */
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
 }
