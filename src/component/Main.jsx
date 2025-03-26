@@ -8,10 +8,7 @@ function Main() {
     <>
       <section id="bg-img">
         <div className="overlay-text">
-          <h1>Welcome to My Website</h1>
-          <p>
-            This is an example of using gradient overlays on background images
-          </p>
+          <h1>あなたの不調、根本からケアします</h1>
         </div>
       </section>
 
@@ -39,6 +36,10 @@ function Main() {
         </div>
       </section>
 
+      <section id="features" className="content-section">
+        <div className=""></div>
+      </section>
+      
       <section id="plans" className="content-section"></section>
     </>
   );
