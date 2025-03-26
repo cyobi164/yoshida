@@ -84,7 +84,8 @@ body {
 
 /* About Text */
 .about-text {
-    max-width: 90%;
+    max-width: 600px;
+    text-align: justify;
 }
 
 .about-text h1 {
