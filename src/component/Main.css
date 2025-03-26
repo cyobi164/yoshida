@@ -94,8 +94,9 @@ body {
 
 .about-text p {
     font-size: 18px;
-    line-height: 1.9;
-    text-align: justify;
+    line-height: 1.9; /* Increased line height */
+    word-break: break-word; /* Prevents awkward breaks */
+    hyphens: auto; /* Adds hyphens where necessary */
     margin-bottom: 15px;
 }
 
