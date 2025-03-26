@@ -1,11 +1,11 @@
-/* General Styling */
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500px;
 }
 
 /* Background Image Section */
@@ -13,23 +13,14 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url("../assets/photo/backimg.jpg") no-repeat center center;
+    background-image: url("../assets/photo/backimg.jpg");
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
-}
-
-/* Ensure background image scales properly */
-@media (max-width: 768px) {
-    #bg-img {
-        background-attachment: scroll;
-        background-position: center;
-    }
 }
 
 /* Overlay */
@@ -40,27 +31,38 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Darker overlay for readability */
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
 }
 
 /* Overlay Text */
 .overlay-text {
     position: relative;
     color: white;
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     padding: 0 20px;
     max-width: 90%;
 }
 
-/* Responsive Overlay Text */
-@media (max-width: 480px) {
+/* Responsive Text Size */
+@media (max-width: 768px) {
     .overlay-text {
-        font-size: 1.2rem;
+        font-size: 2rem;
+    }
+    #bg-img h1 {
+        font-size: 36px;
     }
 }
 
+@media (max-width: 480px) {
+    .overlay-text {
+        font-size: 1.5rem;
+    }
+    #bg-img h1 {
+        font-size: 28px;
+    }
+}
 
 /* About Section */
 #about {
@@ -84,16 +86,15 @@ body {
 /* About Text */
 .about-text {
     max-width: 600px;
+    text-align: justify; /* Ensures even text alignment */
 }
 
-.about-text h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
+/* Fix text wrapping issues */
 .about-text p {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.9; /* Increased line height */
+    word-break: break-word; /* Prevents awkward breaks */
+    hyphens: auto; /* Adds hyphens where necessary */
     margin-bottom: 15px;
 }
 
@@ -104,7 +105,8 @@ body {
         text-align: center;
     }
     .about-text {
-        text-align: center;
+        text-align: justify;
+        max-width: 90%; /* Makes sure text takes appropriate width */
     }
 }
 
@@ -124,5 +126,47 @@ body {
 @media (max-width: 768px) {
     .content-section {
         padding: 50px 5%;
+    }
+}
+
+/* Navigation Bar */
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+/* Navbar */
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation Item */
+.nav-item {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        margin: 10px 0;
+        font-size: 18px;
     }
 }
