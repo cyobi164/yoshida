@@ -95,6 +95,7 @@ body {
 .about-text p {
     font-size: 18px;
     line-height: 1.9;
+    text-align: justify;
     margin-bottom: 15px;
 }
 
