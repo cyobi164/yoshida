@@ -37,49 +37,40 @@ function Main() {
       </section>
 
       <section id="features" className="content-section">
-        <div className="ex">
-          <h1>カイロプラクティックとは？</h1>
-          <p>
-            カイロプラクティックは、背骨や骨盤の歪みを矯正し、体の不調を改善する手技療法です。
-            主に手技を使って関節や筋肉のバランスを整え、神経の働きを良くするのが特徴。腰痛や肩こり、
-            頭痛などの症状にアプローチするだけでなく、健康維持や予防にも活用されます。
-            また、筋骨格系の障害と健康の関係を診断・治療・予防することを目的としています。
+  <div className="benifit">
+    <h1 className="section-title">カイロプラクティックの特徴</h1>
+    
+    <div className="card-container">
+      <div className="card">
+        <img src={Card01} alt="Card Image" className="card-image" />
+        <div className="card-content">
+          <h1 className="card-title">
+            その場しのぎではなく、根本原因にアプローチ
+          </h1>
+          <p className="card-description">
+            多くの整体やマッサージは、痛みなどの症状の部位に直接アプローチをする対処療法です。
+            こういった施術の効果は一時的で、すぐに元に戻ってしまいます。
+            カイロプラティックは、一時的な症状の緩和ではなく、
+            症状の原因である「※神経の圧迫」にアプローチし、根本から健康な身体へ導きます。
           </p>
         </div>
-        <div className="benifit">
-          <h1>カイロプラクティックの特徴</h1>
-          <div className="card">
-            <img src={Card01} alt="Card Image" className="card-image" />
-            <div className="card-content">
-              <h1 className="card-title">
-                その場しのぎではなく、根本原因にアプローチ一
-              </h1>
-              <p className="card-description">
-              多くの整体やマッサージは、痛みなどの症状の部位に直接アプローチをする対処療法です。
-              こういった施術の効果は一時的で、すぐに元に戻ってしまいます。
-              カイロプラティックは、一時的な症状の緩和ではなく、
-              症状の原因である「※神経の圧迫」にアプローチし、根本から健康な身体へ導きます。
-              </p>
-            </div>
-          </div>
-          
-          <div className="card">
-            <img src={Card02} alt="Card Image" className="card-image" />
-            <div className="card-content">
-              <h1 className="card-title">身体全体のバランスを整え、自然な回復力を向上</h1>
-              <p className="card-description">
-              骨格の歪みを調整し、神経の流れを正常化することで、自然治癒力を最大限に引き出します。
-              自然治癒力が高まると、治療の頻度を減らすことにつながり、
-              悩みに向き合う時間を減らすことができます。
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <div className="card">
-          
+      <div className="card">
+        <img src={Card02} alt="Card Image" className="card-image" />
+        <div className="card-content">
+          <h1 className="card-title">身体全体のバランスを整え、自然な回復力を向上</h1>
+          <p className="card-description">
+            骨格の歪みを調整し、神経の流れを正常化することで、自然治癒力を最大限に引き出します。
+            自然治癒力が高まると、治療の頻度を減らすことにつながり、
+            悩みに向き合う時間を減らすことができます。
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section id="plans" className="content-section"></section>
     </>
