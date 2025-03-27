@@ -1,139 +1,191 @@
 /* General Styling */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 600;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
 }
 
 /* Background Image Section */
 #bg-img {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url("../assets/photo/backimg.jpg") no-repeat center center;
-    background-size: cover;
-    background-position: top center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/photo/backimg.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 /* Ensure background image scales properly */
 @media (max-width: 768px) {
-    #bg-img {
-        background-attachment: scroll;
-        background-position: center;
-    }
+  #bg-img {
+    background-attachment: scroll;
+    background-position: center;
+  }
 }
 
 /* Overlay */
 #bg-img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Darker overlay for readability */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay for readability */
 }
 
 /* Overlay Text */
 .overlay-text {
-    position: relative;
-    color: white;
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-    font-weight: bold;
-    text-align: center;
-    padding: 0 20px;
-    max-width: 90%;
+  position: relative;
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 90%;
 }
 
 /* Responsive Overlay Text */
 @media (max-width: 480px) {
-    .overlay-text {
-        font-size: 1.2rem;
-    }
+  .overlay-text {
+    font-size: 1.2rem;
+  }
 }
-
 
 /* About Section */
 #about {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 5%;
-    text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 5%;
+  text-align: left;
 }
 
 /* Profile Image */
 #about img {
-    width: 100%;
-    max-width: 250px; /* Scales down on smaller screens */
-    height: auto;
-    border-radius: 10%;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10%;
 }
 
 /* About Text */
 .about-text {
-    max-width: 600px;
-    text-align: justify;
+  max-width: 600px;
+  text-align: justify;
 }
 
 .about-text h1 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .about-text p {
-    font-size: 18px;
-    line-height: 1.9; /* Increased line height */
-    word-break: break-word; /* Prevents awkward breaks */
-    hyphens: auto; /* Adds hyphens where necessary */
-    margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.9; /* Increased line height */
+  word-break: break-word; /* Prevents awkward breaks */
+  hyphens: auto; /* Adds hyphens where necessary */
+  margin-bottom: 15px;
 }
 
 /* Responsive About Section */
 @media (max-width: 768px) {
-    #about {
-        text-align: left; /* Align text to left instead of center */
-    }
-    .about-text {
-        text-align: left;
-        padding: 0 10px; /* Add some padding for better readability */
-    }
-    .about-text p {
-        font-size: 19px;
-        line-height: 1.9;
-        margin-bottom: 15px;
-        text-indent: 1em; /* Indent the first line for better readability */
-    }
+  #about {
+    text-align: left; /* Align text to left instead of center */
+  }
+  #about img {
+    width: 250px; /* Slightly smaller on mobile */
+    margin-bottom: 10px;
+  }
+  .about-text {
+    text-align: left;
+    padding: 0 10px; /* Add some padding for better readability */
+  }
+  .about-text p {
+    font-size: 19px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    text-indent: 1em; /* Indent the first line for better readability */
+  }
 }
 
+/*fetures*/
+.ex p {
+  font-size: 18px;
+  line-height: 1.9;
+  text-align: left;
+}
+
+.benifit h1 {
+  margin-top: 50px;
+}
 
 /* Content Sections */
 .content-section {
-    padding: 80px 10%;
-    text-align: center;
-    background-color: #f9f9f9;
-    margin-top: 100px;
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-top: 100px;
 }
 
 .content-section:nth-child(even) {
-    background-color: #E9E9E9;
+  background-color: #e9e9e9;
 }
 
 /* Responsive Padding */
 @media (max-width: 768px) {
-    .content-section {
-        padding: 50px 5%;
-    }
+  .content-section {
+    padding: 50px 5%;
+  }
+}
+
+/*card*/
+.card {
+  flex: 1 1 calc(50% - 20px); /* Two cards per row */
+  max-width: 450px; /* Restricts max width for consistency */
+  background: #f5f5f5; /* Light grey background */
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Responsive: One card per row on smaller screens */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
 }
