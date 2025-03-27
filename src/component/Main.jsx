@@ -3,6 +3,7 @@ import Profile_image from "../assets/photo/yoshi.jpg";
 import Back_img from "../assets/photo/backimg.jpg";
 import Card01 from "../assets/photo/img01.jpg";
 import Card02 from "../assets/photo/card02.jpg";
+import Card03 from "../assets/photo/img03.jpg";
 import "./Main.css";
 
 function Main() {
@@ -37,40 +38,56 @@ function Main() {
       </section>
 
       <section id="features" className="content-section">
-  <div className="benifit">
-    <h1 className="section-title">カイロプラクティックの特徴</h1>
-    
-    <div className="card-container">
-      <div className="card">
-        <img src={Card01} alt="Card Image" className="card-image" />
-        <div className="card-content">
-          <h1 className="card-title">
-            その場しのぎではなく、根本原因にアプローチ
-          </h1>
-          <p className="card-description">
-            多くの整体やマッサージは、痛みなどの症状の部位に直接アプローチをする対処療法です。
-            こういった施術の効果は一時的で、すぐに元に戻ってしまいます。
-            カイロプラティックは、一時的な症状の緩和ではなく、
-            症状の原因である「※神経の圧迫」にアプローチし、根本から健康な身体へ導きます。
-          </p>
-        </div>
-      </div>
+        <div className="benifit">
+          <h1 className="section-title">カイロプラクティックの特徴</h1>
 
-      <div className="card">
-        <img src={Card02} alt="Card Image" className="card-image" />
-        <div className="card-content">
-          <h1 className="card-title">身体全体のバランスを整え、自然な回復力を向上</h1>
-          <p className="card-description">
-            骨格の歪みを調整し、神経の流れを正常化することで、自然治癒力を最大限に引き出します。
-            自然治癒力が高まると、治療の頻度を減らすことにつながり、
-            悩みに向き合う時間を減らすことができます。
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="card-container">
+            <div className="card">
+              <img src={Card01} alt="Card Image" className="card-image" />
+              <div className="card-content">
+                <h1 className="card-title">
+                  その場しのぎではなく、根本原因にアプローチ
+                </h1>
+                <p className="card-description">
+                  多くの整体やマッサージは、痛みなどの症状の部位に直接アプローチをする対処療法です。
+                  こういった施術の効果は一時的で、すぐに元に戻ってしまいます。
+                  カイロプラティックは、一時的な症状の緩和ではなく、
+                  症状の原因である「※神経の圧迫」にアプローチし、根本から健康な身体へ導きます。
+                </p>
+              </div>
+            </div>
 
+            <div className="card">
+              <img src={Card02} alt="Card Image" className="card-image" />
+              <div className="card-content">
+                <h1 className="card-title">
+                  身体全体のバランスを整え、自然な回復力を向上
+                </h1>
+                <p className="card-description">
+                  骨格の歪みを調整し、神経の流れを正常化することで、自然治癒力を最大限に引き出します。
+                  自然治癒力が高まると、治療の頻度を減らすことにつながり、
+                  悩みに向き合う時間を減らすことができます。
+                </p>
+              </div>
+            </div>
+
+            <div className="card">
+              <img src={Card03} alt="Card Image" className="card-image" />
+              <div className="card-container">
+                <h1 className="card-title">
+                身体の不調を早期発見！早期対策が可能！
+                </h1>
+                <p className="card-description">
+                施術を繰り返していくことで、身体の良い状態と悪い状態の違いに
+                気付きやすくなります。そのため、辛い症状が発生する前に、
+                身体のパフォーマンスが落ちる前に対策を打ちやすくなります。
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <section id="plans" className="content-section"></section>
     </>
