@@ -117,7 +117,7 @@ function Main() {
             <div className="card">
               <div className="card-content">
                 <h1 className="card-title">ご自宅で本格施術！</h1>
-                <p className="card-description">
+                <p className="card-description0">
                 出張コース 価格要相談
                 </p>
                 <p className="card-description01">
