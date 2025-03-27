@@ -198,12 +198,14 @@ body {
 .card-description {
   font-size: 1em;
   color: #555;
+  text-align: left;
 }
 
 .card-description01 {
     font-size: 1em;
     color: #555;
-  }
+    text-align: left;
+}
 
 /* Responsive: Adjust to two cards per row on tablets */
 @media (max-width: 900px) {
