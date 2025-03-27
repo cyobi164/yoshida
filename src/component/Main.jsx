@@ -116,9 +116,14 @@ function Main() {
 
             <div className="card">
               <div className="card-content">
-                <h1 className="card-title">90分コース</h1>
+                <h1 className="card-title">ご自宅で本格施術！</h1>
                 <p className="card-description">
-                  じっくり施術を受けたい方向けのコース。
+                出張コース 価格要相談
+                </p>
+                <p className="card-description01">
+                「忙しくて通えない…」「小さな子どもがいて外出が難しい…」
+                そんなあなたのために、ご自宅やオフィスでプロの
+                カイロプラクティック施術を受けられる出張コースをご用意しました。
                 </p>
               </div>
             </div>

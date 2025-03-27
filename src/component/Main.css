@@ -200,6 +200,11 @@ body {
   color: #555;
 }
 
+.card-description01 {
+    font-size: 1em;
+    color: #555;
+  }
+
 /* Responsive: Adjust to two cards per row on tablets */
 @media (max-width: 900px) {
   .card {
