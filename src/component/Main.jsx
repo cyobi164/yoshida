@@ -75,21 +75,56 @@ function Main() {
               <img src={Card03} alt="Card Image" className="card-image" />
               <div className="card-container">
                 <h1 className="card-title">
-                身体の不調を早期発見！早期対策が可能！
+                  身体の不調を早期発見！早期対策が可能！
                 </h1>
                 <p className="card-description">
-                施術を繰り返していくことで、身体の良い状態と悪い状態の違いに
-                気付きやすくなります。そのため、辛い症状が発生する前に、
-                身体のパフォーマンスが落ちる前に対策を打ちやすくなります。
+                  施術を繰り返していくことで、身体の良い状態と悪い状態の違いに
+                  気付きやすくなります。そのため、辛い症状が発生する前に、
+                  身体のパフォーマンスが落ちる前に対策を打ちやすくなります。
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      <section id="plans" className="content-section"></section>
+      <section id="plan" className="content-section">
+        <div className="course">
+          <h1 className="section-title">コース一覧</h1>{" "}
+          {/* Optional: Section Title */}
+          <div className="card-container">
+            <div className="card">
+              <div className="card-content">
+                <h1 className="card-title">30分コース</h1>
+                <p className="card-price">¥5,500（初見料 ¥2,200）</p>
+                <p className="card-description">
+                  ほぐし＋カイロプラクティック
+                  背骨周りを中心にほぐした後に矯正をします。
+                </p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-content">
+                <h1 className="card-title">50分コース</h1>
+                <p className="card-description">
+                  ほぐし＋肩甲骨はがしカイロプラクティック
+                  細かく全体的に筋肉をほぐしてから矯正をします。
+                </p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-content">
+                <h1 className="card-title">90分コース</h1>
+                <p className="card-description">
+                  じっくり施術を受けたい方向けのコース。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

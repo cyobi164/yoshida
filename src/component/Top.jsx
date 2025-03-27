@@ -26,7 +26,12 @@ function Top() {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#plan">
-            Plans
+          Treatment courses
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#FAQ">
+            FAQ
           </a>
         </li>
         <li className="nav-item">
