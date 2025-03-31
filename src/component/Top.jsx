@@ -30,11 +30,6 @@ function Top() {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#FAQ">
-            FAQ
-          </a>
-        </li>
-        <li className="nav-item">
           <a className="nav-link" href="#contact">
             Contacts
           </a>
